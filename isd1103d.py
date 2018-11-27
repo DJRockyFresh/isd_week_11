@@ -24,13 +24,14 @@ class CashRegister:
         self._totalPrice = 0.0
 
     def giveChange(self, payment):
-        def payment():
-            float(input("Your payment is: "))
+     #def giveChange(self):   
+        payment = float(input("Your payment is: "))
         self._totalPrice = payment - self._totalPrice
 
 register1 = CashRegister()
-register1.addItem(99.5)
-register1.addItem(199.5)
+register1.addItem(150)
+register1.addItem(100)
+register1.giveChange(2)
 
 print(register1._totalPrice)
 
